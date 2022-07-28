@@ -1,5 +1,5 @@
-from django.db import models
-
+from django.db import models, transaction
+from django.http import HttpResponse
 
 class Article(models.Model):
     title = models.CharField(max_length=256, verbose_name='Название')
